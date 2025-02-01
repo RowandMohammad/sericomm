@@ -1,0 +1,597 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Poppins font to all headings and navbar links */
+h1, h2, h3, h4, h5, h6, nav a {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribute space */
+    align-items: center;
+    width: 100%; /* Take full width */
+    padding: 0.5em;
+}
+
+
+
+nav a:not(.call-button) {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* Center navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.call-button {
+    text-decoration: none;
+    background-color: #001f3f; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 600;
+    margin-left: auto; /* Push the button to the far right */
+}
+
+.call-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Section styles - Making each section take at least full viewport height */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Home section styles */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure this is below your text content */
+}
+
+/* Home section styles */
+.home-section {
+    position: relative;
+    text-align: left; /* Align text to the left */
+    background-color: #f4f4f4;
+    z-index: 2; /* Higher than particles-js to keep text above */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-content {
+    max-width: 1400px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    padding: 0 0px;
+    text-align: left; /* Align text to the left on larger screens */
+}
+
+.home-section h2 {
+    font-size: 4.5em;
+    color: #001f3f;
+    font-weight: bolder; /* Poppins looks great when it's a bit bolder */
+    margin: 0.5em 0;
+}
+
+.home-section p {
+    font-size: 1.8em;
+    color: #666;
+    max-width: 800px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to paragraph as well */
+    font-weight: lighter; /* Poppins looks great when it's a bit bolder */
+
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .home-content {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .home-section h2, .home-section p {
+        text-align: center; /* Center align the text */
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* Logo adjustments to align with the navbar */
+header img {
+    position: absolute;
+    top: 10px; /* Adjust based on your navbar height */
+    left: 20px; /* Standard padding from the screen edge */
+    height: 35px; /* Adjust based on your logo's aspect ratio */
+}
+
+
+/* Services section styles */
+.services-section {
+    background-color: #fff;
+}
+
+.services h4 {
+    height: 500px;
+    color: #001f3f;
+}
+.services h1 {
+    
+    color: #001f3f;
+}
+
+.service-offerings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.service {
+    width: 15%; /* Adjust based on preference and responsiveness */
+    margin: 20px; /* Increased margin for more space between services */
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center; /* Center-align the content */
+    font-family: 'Poppins', sans-serif;
+    color: #001f3f;
+
+}
+
+.service i {
+    max-width: 100%; /* Ensure the image is responsive and fits the container */
+    max-height: 70px; /* Ensure the image is responsive and fits the container */
+
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space between image and text */
+    font-size: 96px;
+    color: #001f3f;
+}
+
+
+
+.service h3 {
+    color: #001f3f;
+}
+
+/* Services Statistics Styles */
+.services-stats {
+    background-color: #001f3f; /* Navy color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px; /* Space from the above content */
+    width: 100%;
+    z-index: 2;
+
+}
+
+.services-stats h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: lighter;
+
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.number {
+    display: block;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to paragraph as well */
+
+
+}
+
+.descriptor {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to paragraph as well */
+
+
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    .stats div {
+        margin: 10px 0;
+    }
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .service {
+        width: 100%; /* Full width for smaller screens */
+        margin: 20px 0; /* Adjust margin for vertical spacing on small screens */
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* Override styles for the About section */
+#about {
+    flex-direction: row; /* Align children of the About section horizontally */
+    justify-content: stretch; /* Stretch children to fill the horizontal space */
+    align-items: stretch; /* Stretch children to fill the vertical space */
+    padding: 0; /* Remove padding to eliminate space around video */
+    margin-top: -20px; /* Adjust if there's a gap between the sections */
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to paragraph as well */
+    height: 800px;
+
+}
+
+#about h4{
+color: #A24F42;
+font-size: larger;
+}
+#about h2{
+width: 40%;  
+font-size:xx-large;
+  }
+
+#about p{
+    width: 75%;
+    padding-top:2% ;
+    }
+
+/* Specific styles for left and right splits in the About section */
+#about .left, #about .right {
+    width: 50%; /* Assign half of the container's width to each */
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+#about .left {
+    padding-left: 5%; /* Start text a bit into the section, adjust if necessary */
+    padding-right: 2%; /* Prevent text from touching the video, adjust if necessary */
+    padding-bottom: 5%; /* Space at the bottom, adjust if necessary */
+    padding-top: 5%; /* Space at the bottom, adjust if necessary */
+
+    align-items: flex-start; /* Align content to the top */
+    justify-content: center;
+    flex-direction: column; /* Stack text vertically */
+}
+
+#about .left .centered {
+    text-align: left;
+    width: 100%; /* Use full width of the left container */
+    transform: none; /* Reset any transformations */
+}
+
+/* Ensure the right section (video) also respects the box-sizing */
+#about .right {
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+#about .right video {
+    width: 100%; /* Video takes full width of its container */
+    height: 100%; /* Video takes full height to eliminate space */
+    object-fit: cover; /* Ensure video covers the full area without distortion */
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments for the About section */
+    #about {
+        flex-direction: column; /* Stack the left and right sections vertically on smaller screens */
+    }
+
+    #about .left, #about .right {
+        width: 100%; /* Full width for each section on smaller screens */
+        padding: 5%; /* Add padding for smaller screens */
+    }
+
+    #about .left {
+        padding-bottom: 10%; /* Adjust bottom padding for smaller screens */
+    }
+}
+
+
+
+
+
+
+/* Testimonials section styles */
+#testimonials {
+    padding-top: 15px;
+    background-color: #e9ecef;
+    min-height: 200px;
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to paragraph as well */
+
+}
+
+#testimonials .testimonial {
+    animation: fadeInOut 20s infinite;
+    position: absolute;
+    width: 100%;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    5%, 25% { opacity: 1; }
+    30%, 50% { opacity: 0; }
+    55%, 75% { opacity: 1; }
+    80%, 95% { opacity: 0; }
+}
+
+
+
+#testimonials h1 {
+    font-size: 64px;
+    width:100%;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to paragraph as well */
+
+    
+
+}
+/* Clients section styles */
+/* Clients section styles */
+.clients-section {
+    background-color: #fff;
+    padding: 20px 0; /* Adjust padding as needed */
+    text-align: center; /* Center-align the content */
+    min-height: 200px;
+}
+
+.clients-section h4{
+color: #A24F42;
+}
+
+.client-logos {
+    display: flex; /* Align images in a row */
+    justify-content: space-around; /* Distribute space evenly around the images */
+    align-items: center; /* Align images vertically */
+    flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+    max-width: 2000px; /* Maximum width of the logos container */
+    margin: auto; /* Center the logos container */
+}
+
+.client-logos img {
+    height: 100px; /* Fixed height for all logos */
+    width: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space around each logo */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+.client-logos img:hover {
+    transform: scale(1.1); /* Slightly enlarge logos on hover */
+}
+
+
+/* Contact section styles */
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Call Button Styles */
+.call-button {
+    background-color: #001f3f; /* Button color */
+    color: white; /* Text color */
+    padding: 7px 20px; /* Padding inside the button */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.call-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Contact section styles adapted from the example */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins to paragraph as well */
+    min-height: 600px;
+    background-color: #e9ecef;
+
+
+}
+
+.contact-section .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 6px;
+}
+
+.contact-section .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-section .left-side {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.contact-section .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.contact-section .left-side .details i {
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+
+.contact-section .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-section .left-side .details .text-one,
+.contact-section .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.contact-section .right-side {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.contact-section .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #001f3f;
+}
+
+.contact-section .right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.contact-section .right-side .input-box input,
+.contact-section .right-side .input-box textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact-section .right-side .message-box {
+    min-height: 110px;
+}
+
+.contact-section .right-side .button {
+    margin-top: 12px;
+}
+
+.contact-section .button input[type="submit"] {
+    color: #fff;
+    background: #001f3f;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-section .button input[type="submit"]:hover {
+    background: #5029bc;
+}
+
+@media (max-width: 950px) {
+    .contact-section .container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .contact-section .left-side,
+    .contact-section .right-side {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-section .right-side {
+        margin-top: 20px;
+    }
+}
+
