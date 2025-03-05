@@ -1,15 +1,62 @@
-# Ansh & Riley Full-Stack Template
+# SeriComm - Professional Support Services
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+SeriComm is a modern, responsive website built with Next.js, React, TypeScript, and Tailwind CSS. It showcases a professional business offering comprehensive support and administration solutions.
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
+## Features
 
-You can also edit the Path's prompt template to be whatever you like!
+- Fully responsive design that looks great on all devices
+- Modern UI with smooth animations and transitions
+- Comprehensive sections showcasing services, testimonials, and contact information
+- Interactive components including service tabs, testimonial carousel, and contact form
+- Optimized for performance and SEO
 
-## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
-- React with Next.js 14 App Router
-- TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+## Tech Stack
+
+- **Next.js 14** with App Router
+- **React 18** for building UI components
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **React Hooks** for state management
+
+## Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project Structure
+
+- `/src/app` - Main application pages and layouts
+- `/src/components` - Reusable React components
+- `/src/lib` - Utility functions and hooks
+- `/public` - Static assets like images and fonts
+
+## Customization
+
+The website is designed to be easily customizable:
+
+- Colors can be modified in `src/app/globals.css`
+- Content can be updated in the respective component files
+- Services and testimonials data are stored as arrays in their component files
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

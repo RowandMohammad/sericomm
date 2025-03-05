@@ -3,27 +3,64 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary-color: #4f46e5; /* Indigo */
+  --primary-dark: #4338ca; /* Darker indigo */
+  --secondary-color: #10b981; /* Emerald */
+  --accent-color: #f97316; /* Orange accent */
+  --text-color: #111827; /* Near black */
+  --text-light: #6b7280; /* Gray for secondary text */
+  --bg-light: #f9fafb; /* Light gray background */
+  --bg-white: #ffffff; /* White */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text-color);
+  background-color: var(--bg-white);
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-medium;
+  }
+  h4 {
+    @apply text-xl font-medium;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200;
+  }
+  .btn-primary {
+    @apply bg-[var(--primary-color)] text-white hover:bg-[var(--primary-dark)] focus:ring-indigo-500;
+  }
+  .btn-secondary {
+    @apply bg-[var(--secondary-color)] text-white hover:opacity-90 focus:ring-emerald-500;
+  }
+  .btn-accent {
+    @apply bg-[var(--accent-color)] text-white hover:opacity-90 focus:ring-orange-500;
+  }
+  .btn-light {
+    @apply bg-white text-gray-800 hover:bg-gray-100 border-gray-200 focus:ring-gray-300;
+  }
+  .section-title {
+    @apply text-center mb-12;
+  }
+  .section-title h4 {
+    @apply text-[var(--primary-color)] uppercase tracking-widest text-sm font-semibold mb-2;
+  }
+  .section-title h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
 }
 
 @layer utilities {
