@@ -20,7 +20,8 @@ const AboutSection = () => {
                 <p>
                   We are SeriComm. A premier destination for comprehensive
                   support and administration solutions. Whatever your needs may
-                  be, we're here to provide a bespoke solution just for you!
+                  be, we&apos;re here to provide a bespoke solution just for
+                  you!
                 </p>
                 <p>
                   Our team of seasoned professionals is trained to deliver
@@ -125,7 +126,7 @@ const AboutSection = () => {
                       <p className="text-lg">
                         Our dedicated team of experts provides comprehensive
                         support services to help your business succeed in
-                        today's competitive market.
+                        today&apos;s competitive market.
                       </p>
                     </div>
                   </div>

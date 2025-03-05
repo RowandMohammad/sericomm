@@ -259,13 +259,15 @@ const ServicesSection = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentSectionRef = sectionRef.current;
+
+    if (currentSectionRef) {
+      observer.observe(currentSectionRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSectionRef) {
+        observer.unobserve(currentSectionRef);
       }
     };
   }, []);
@@ -364,7 +366,7 @@ const ServicesSection = () => {
           style={{ animationDelay: "600ms", animationFillMode: "forwards" }}
         >
           <h2 className="text-3xl font-bold text-center mb-10">
-            We're Good with Numbers
+            We&apos;re Good with Numbers
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:shadow-lg hover:scale-105">

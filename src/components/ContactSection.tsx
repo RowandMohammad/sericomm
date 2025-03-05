@@ -171,7 +171,7 @@ const ContactSection = () => {
                 <div className="ml-4">
                   <h4 className="text-lg font-medium">Business Hours</h4>
                   <p className="mt-1 text-gray-600">
-                    24/7 - We're always here to help!
+                    24/7 - We&apos;re always here to help!
                   </p>
                 </div>
               </div>
@@ -198,8 +198,8 @@ const ContactSection = () => {
                 </svg>
                 <h3 className="text-2xl font-semibold mb-2">Thank You!</h3>
                 <p className="text-gray-600">
-                  Your message has been sent successfully. We'll get back to you
-                  as soon as possible.
+                  Your message has been sent successfully. We&apos;ll get back
+                  to you as soon as possible.
                 </p>
                 <button
                   className="mt-6 px-4 py-2 bg-gray-200 rounded-md text-gray-700 hover:bg-gray-300 transition-colors"
