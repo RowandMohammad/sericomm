@@ -184,9 +184,11 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="text-gray-300">
-                  81 Holbrook Meadow
+                  71-75 Shelton Street
                   <br />
-                  Egham, TW20 8XA
+                  Covent Garden, London
+                  <br />
+                  WC2H 9JQ
                 </span>
               </li>
               <li className="flex items-start">

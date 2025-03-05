@@ -84,9 +84,11 @@ const ContactSection = () => {
                 <div className="ml-4">
                   <h4 className="text-lg font-medium">Address</h4>
                   <address className="mt-1 not-italic text-gray-600">
-                    81 Holbrook Meadow
+                    71-75 Shelton Street
                     <br />
-                    Egham, TW20 8XA
+                    Covent Garden, London
+                    <br />
+                    WC2H 9JQ
                   </address>
                 </div>
               </div>

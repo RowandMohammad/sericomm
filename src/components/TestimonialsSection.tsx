@@ -20,9 +20,9 @@ const testimonials: Testimonial[] = [
   {
     id: 2,
     quote:
-      "The virtual assistance services provided by SeriComm have streamlined our administrative processes, saving us valuable time and resources.",
-    author: "Serina Johnson",
-    company: "Global Ventures Inc.",
+      "The virtual assistance services provided by SeriComm have streamlined our administrative processes, saving us valuable time and resources. Their attention to detail is remarkable.",
+    author: "Michael Thompson",
+    company: "Global Ventures Ltd.",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
     id: 4,
     quote:
       "SeriComm's lifestyle support services have made a remarkable difference in maintaining work-life balance for our executive team.",
-    author: "Jack Williams",
+    author: "Sarah Williams",
     company: "Apex Industries",
   },
 ];

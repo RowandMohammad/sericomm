@@ -24,6 +24,22 @@ const services: Service[] = [
     category: "business",
   },
   {
+    id: "intercom-support",
+    icon: "support",
+    title: "Intercom Support",
+    description:
+      "Expert Intercom platform management and support services. Our team specialises in leveraging Intercom's features to deliver exceptional customer service, engagement, and support automation.",
+    category: "business",
+  },
+  {
+    id: "hubspot-management",
+    icon: "support",
+    title: "HubSpot Management",
+    description:
+      "Comprehensive HubSpot platform management and optimisation. We help you maximise your CRM potential, automate marketing workflows, and enhance customer relationships through HubSpot's powerful tools.",
+    category: "business",
+  },
+  {
     id: "administration",
     icon: "admin",
     title: "Administration",
@@ -122,11 +138,11 @@ const services: Service[] = [
     category: "lifestyle",
   },
   {
-    id: "home-organization",
+    id: "home-organisation",
     icon: "home",
-    title: "Home Organization",
+    title: "Home Organisation",
     description:
-      "Professional decluttering, organizing, and cleaning services to transform your living spaces into functional, peaceful environments.",
+      "Professional decluttering, organising, and cleaning services to transform your living spaces into functional, peaceful environments.",
     category: "lifestyle",
   },
   {
@@ -368,18 +384,12 @@ const ServicesSection = () => {
           <h2 className="text-3xl font-bold text-center mb-10">
             We&apos;re Good with Numbers
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
             <div className="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:shadow-lg hover:scale-105">
               <span className="block text-4xl font-bold text-[var(--primary-color)] mb-2 counter">
                 15
               </span>
               <span className="text-gray-600">Years of Experience</span>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:shadow-lg hover:scale-105">
-              <span className="block text-4xl font-bold text-[var(--primary-color)] mb-2 counter">
-                12
-              </span>
-              <span className="text-gray-600">Experts</span>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:shadow-lg hover:scale-105">
               <span className="block text-4xl font-bold text-[var(--primary-color)] mb-2">
@@ -389,9 +399,9 @@ const ServicesSection = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:shadow-lg hover:scale-105">
               <span className="block text-4xl font-bold text-[var(--primary-color)] mb-2 counter">
-                24
+                98%
               </span>
-              <span className="text-gray-600">Assistance Allies</span>
+              <span className="text-gray-600">Customer Satisfaction</span>
             </div>
           </div>
         </div>
