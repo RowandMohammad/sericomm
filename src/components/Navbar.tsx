@@ -94,7 +94,7 @@ const Navbar = () => {
           </div>
 
           <Link
-            href="tel:+441784559782"
+            href="tel:+44"
             className={`hidden md:inline-flex ${
               scrolled
                 ? "btn btn-primary py-2 px-4 text-sm"
@@ -196,7 +196,7 @@ const Navbar = () => {
             Contact
           </Link>
           <Link
-            href="tel:+441784559782"
+            href="tel:+4"
             className="btn btn-primary self-start"
             onClick={() => setIsOpen(false)}
           >
